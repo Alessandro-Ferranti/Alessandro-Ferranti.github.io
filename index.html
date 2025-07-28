@@ -4,59 +4,72 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bacchus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
-      background-color: #800020;
-      color: white;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #5e0b15, #800020);
+      color: #fff;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       text-align: center;
-      padding: 0 20px;
+      background-image: url('https://www.transparenttextures.com/patterns/black-lozenge.png');
     }
     h1 {
-      font-size: 4em;
+      font-family: 'Playfair Display', serif;
+      font-size: 4.5rem;
       margin-bottom: 0.3em;
+      letter-spacing: 2px;
     }
     p {
-      font-size: 1.2em;
+      font-size: 1.25rem;
       max-width: 600px;
+      margin: 0 auto 2em;
+      line-height: 1.6;
     }
     form {
-      margin-top: 1.5em;
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      width: 100%;
+      gap: 1rem;
+      width: 90%;
       max-width: 400px;
     }
-    input, button {
-      padding: 12px;
-      font-size: 1em;
+    input {
+      padding: 14px;
+      font-size: 1rem;
       border: none;
-      border-radius: 5px;
-    }
-    input[type="email"] {
+      border-radius: 8px;
       color: #333;
     }
     button {
-      background-color: white;
+      padding: 14px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #fff;
       color: #800020;
       font-weight: bold;
       cursor: pointer;
+      transition: background-color 0.3s ease;
     }
     button:hover {
       background-color: #f0f0f0;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 3rem;
+      }
     }
   </style>
 </head>
 <body>
   <h1>Bacchus</h1>
-  <p>Soluzioni AI per i viticoltori: previsioni climatiche, qualità e raccolta ottimale.</p>
+  <p>Soluzioni AI per viticoltori: previsioni climatiche, qualità del vino, raccolta ottimale.</p>
   <form action="https://formspree.io/f/mqalbdop" method="POST">
     <input type="email" name="email" placeholder="Inserisci la tua email" required />
     <button type="submit">Tienimi aggiornato</button>
